@@ -12,7 +12,7 @@ namespace Mango.MessageBus
 {
     public class MessageBus : IMessageBus
     {
-        private string connectionString = "Azure_service_bus_key";
+        private string connectionString = "Azure_Service_Bus_Key";
         public async Task PublishMessage(object message, string topic_queue_name)
         {
             await using var client = new ServiceBusClient(connectionString);
