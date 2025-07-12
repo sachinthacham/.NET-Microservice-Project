@@ -31,7 +31,6 @@ namespace Mango.Services.ProductAPI.Controllers
                 IEnumerable<Product> objList = _db.Products.ToList();
                 _response.Result = _mapper.Map<IEnumerable<ProductDto>>(objList);
                
-                
             }catch(Exception ex)
             {
                 _response.IsSuccess = false;
